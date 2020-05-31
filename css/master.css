@@ -11,7 +11,6 @@ body{
 	color:black;
 	font-family:Arial, Helvetica, Sans-serif;
 	text-align:center;
-	dot-align:center-left;
 }
 	
 footer{
@@ -39,5 +38,5 @@ footer{
 }
 code{
 	margin-top:2rem;
-	margin-bottom:2rem;
+	margin-bottom:0rem;
 }
