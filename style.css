@@ -111,6 +111,12 @@ body{
     font-size: 15px;
     font-weight: 300;
 }
+.contactInfo ul li span a{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 300;
+    text-decoration: none;
+}
 
 .contactInfo.education li{
     margin-bottom: 10px;
