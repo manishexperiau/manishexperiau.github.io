@@ -1,0 +1,571 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: rgb(114, 114, 114);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background-color: #fff;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+}
+
+.container .left_side{
+    position: relative;
+    background-color: #003147;
+    padding: 30px;
+    
+}
+
+.profileText{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.profileText .imgBx{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profileText .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profileText h2{
+    color: #fff;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 20px;
+    line-height: 1.4em;
+}
+
+.profileText h2 span{
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+.contactInfo{
+    padding-top: 35px;
+}
+
+.title{
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-size: 1.1em;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.contactInfo ul{
+    position: relative;
+}
+
+.contactInfo ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.contactInfo ul li .icon{
+    display: inline-block;
+    font-size: 13px;
+    width: 25px;
+    color: #03a9f4;
+}
+
+.contactInfo ul li span{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 300;
+    
+}
+.contactInfo ul li span a{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.contactInfo.education li{
+    margin-bottom: 10px;
+}
+
+.contactInfo.education h5{
+    color: #03a9f4;
+    font-weight: 500;
+}
+
+.contactInfo.education h4:nth-child(2){
+    color: #fff;
+    font-weight: 500;
+}
+
+.contactInfo.education h4{
+    color: #fff;
+    font-weight: 300;
+}
+.contactInfo.interest ul{
+    position: relative;
+}
+.contactInfo.interest ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.contactInfo.interest ul li .icon{
+    display: inline-block;
+    font-size: 13px;
+    width: 20px;
+    color: #03a9f4;
+}
+
+.contactInfo.interest ul li span{
+    color: #fff;
+    font-weight: 300;
+}
+
+/* .contactInfo.interest h4{
+    color: #fff;
+    font-weight: 500;
+} */
+
+.contactInfo.language .percent{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: #081921;
+    display: block;
+    margin-top: 5px;
+}
+
+.contactInfo.language .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #03a9f4;
+    height: 100%;
+
+}
+
+.container .right_side{
+    position: relative;
+    background-color: #fff;
+    padding: 30px;
+}
+
+.about{
+    margin-bottom: 50px;
+}
+
+.about:last-child{
+    margin-bottom: 0;
+}
+
+.title2{
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+p{
+    color: #848c99;
+}
+
+.about .box{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0px;
+}
+
+.about .box .year_company{
+    min-width: 240px;
+}
+
+.about .box .year_company h5{
+    text-transform: uppercase;
+    color: #848c90;
+    font-weight: 600;
+}
+
+/* .about .box .text{
+    margin-left: 10px;
+} */
+
+.about .box .text li{
+    color: #848c90;
+}
+
+.about .box .text h4{
+    text-transform: uppercase;
+    color: #2a7da2;
+    font-size: 16px;
+}
+
+.skills .box{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #2a7da2; */
+}
+
+.skills .box h4{
+    text-transform: uppercase;
+    color: #848c99;
+    font-weight: 500;
+
+}
+
+.skills .box  .percent{
+    position: relative;
+    width: 100%;
+    height: 8px;
+    background: #f0d0f0;
+
+}
+
+.skills .box .percent .html{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a9f4;
+    transition: 1s ease-in;
+    animation: skillsbar1 1s forwards;
+}
+@keyframes skillsbar1 {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 95%;
+    }
+}
+.skills .box .percent .css {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a9f4;
+    transition: 1s ease-in;
+    animation: skillsbar2 1s forwards;
+}
+@keyframes skillsbar2 {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 85%;
+    }
+}
+.skills .box .percent .js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a9f4;
+    transition: 1s ease-in;
+    animation: skillsbar3 1s forwards;
+}
+@keyframes skillsbar3 {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 70%;
+    }
+}
+.skills .box .percent .premiere {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a9f4;
+    transition: 1s ease-in;
+    animation: skillsbar4 1s forwards;
+}
+@keyframes skillsbar4 {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 80%;
+    }
+}
+.skills .box .percent .ill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a9f4;
+    transition: 1s ease-in;
+    animation: skillsbar5 1s forwards;
+}
+@keyframes skillsbar5 {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 85%;
+    }
+}
+.skills .box .percent .photoshop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a9f4;
+    transition: 1s ease-in;
+    animation: skillsbar6 1s forwards;
+}
+@keyframes skillsbar6 {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 75%;
+    }
+}
+.skills .box .percent .cad {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a9f4;
+    transition: 1s ease-in;
+    animation: skillsbar7 1s forwards;
+}
+@keyframes skillsbar7 {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 70%;
+    }
+}
+
+.skills .box .percent .html span{
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    background-color: #03a9f4;
+    border: 4px solid rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    top: -45%;
+    transition: 0.4s ease-in;
+    animation: skillsbar11 0.4s forwards;
+   
+}
+@keyframes skillsbar11 {
+    0%{
+        left: 0;
+    }
+    100%{
+       left: 98%;
+    }
+}
+.skills .box .percent .css span{
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    background-color: #03a9f4;
+    border: 4px solid rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    top: -45%;
+    transition: 0.4s ease-in;
+    animation: skillsbar12 0.4s forwards;
+   
+}
+@keyframes skillsbar12 {
+    0%{
+        left: 0;
+    }
+    100%{
+        left: 98%;
+    }
+}
+.skills .box .percent .js span{
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    background-color: #03a9f4;
+    border: 4px solid rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    top: -45%;
+    transition: 0.4s ease-in;
+    animation: skillsbar13 0.4s forwards;
+   
+}
+@keyframes skillsbar13 {
+    0%{
+        left: 0;
+    }
+    100%{
+        left: 98%;
+    }
+}
+.skills .box .percent .premiere span{
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    background-color: #03a9f4;
+    border: 4px solid rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    top: -45%;
+    transition: 0.4s ease-in;
+    animation: skillsbar14 0.4s forwards;
+   
+}
+@keyframes skillsbar14 {
+    0%{
+        left: 0;
+    }
+    100%{
+        left: 98%;
+    }
+}
+.skills .box .percent .ill span{
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    background-color: #03a9f4;
+    border: 4px solid rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    top: -45%;
+    transition: 0.4s ease-in;
+    animation: skillsbar15 0.4s forwards;
+   
+}
+@keyframes skillsbar15 {
+    0%{
+        left: 0;
+    }
+    100%{
+        left: 98%;
+    }
+}
+.skills .box .percent .photoshop span{
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    background-color: #03a9f4;
+    border: 4px solid rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    top: -45%;
+    transition: 0.4s ease-in;
+    animation: skillsbar16 0.4s forwards;
+   
+}
+@keyframes skillsbar16 {
+    0%{
+        left: 0;
+    }
+    100%{
+        left: 98%;
+    }
+}
+
+.skills .box .percent .cad span{
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    background-color: #03a9f4;
+    border: 4px solid rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    top: -45%;
+    transition: 0.4s ease-in;
+    animation: skillsbar17 0.4s forwards;
+   
+}
+@keyframes skillsbar17 {
+    0%{
+        left: 0;
+    }
+    100%{
+        left: 98%;
+    }
+}
+
+.hobbies ul{
+    display: grid;
+    grid-template-columns: 1fr 0.8fr;
+}
+
+.hobbies ul li{
+    list-style: none;
+    color: #333;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.hobbies ul li .fas{
+    
+    color: #03a9f4;
+    font-size: 18px;
+    padding: 0 5px;
+}
+
+@media (max-width: 1000px){
+    .container{
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+}
+
+@media (max-width: 600px){
+    .contactInfo.language .percent{
+        width: 360px;
+    }
+    .about .box{
+        flex-direction: column;
+    }
+    .about .box .year_company{
+        
+        margin-bottom: 5px;
+    }
+    .hobbies ul{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .skills .box{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
