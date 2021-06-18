@@ -40,7 +40,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
@@ -62,12 +62,12 @@ body{
 }
 .profileText h2{
     color: #fff;
-    font-size: 1.5em;
+    font-size: 1.4em;
     text-transform: uppercase;
     font-weight: 600;
     text-align: center;
-    margin-top: 20px;
-    line-height: 1.4em;
+    margin-top: 15px;
+    line-height: 1.3em;
 }
 
 .profileText h2 span{
@@ -76,7 +76,7 @@ body{
 }
 
 .contactInfo{
-    padding-top: 35px;
+    padding-top: 30px;
 }
 
 .title{
@@ -120,7 +120,7 @@ body{
 }
 
 .contactInfo.education li{
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 .contactInfo.education h5{
@@ -143,7 +143,7 @@ body{
 .contactInfo.interest ul li{
     position: relative;
     list-style: none;
-    margin: 10px 0;
+    margin: 8px 0;
     cursor: pointer;
 }
 
