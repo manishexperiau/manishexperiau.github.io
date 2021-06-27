@@ -267,7 +267,7 @@ p{
     top: 0;
     left: 0;
     height: 100%;
-    background: #bfc2c2;
+    background: #03a9f4;
     transition: 1s ease-in;
     animation: skillsbar1 1s forwards;
 }
