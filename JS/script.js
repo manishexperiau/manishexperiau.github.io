@@ -50,6 +50,18 @@ $(document).ready(function(){
 
 
     // skill counter
+
+    $(window).scroll(function(){
+        if(this.scrollY > 2600){
+            $('.skills-content .right').addClass("right-bars");
+            
+        }
+        else{
+            $('.skills-content .right').removeClass("right-bars")
+            
+        }
+    });
+    
     var Htmlinterval = setInterval(htmlcounter, 20);
     var Cssinterval = setInterval(csscounter, 22);
     var Jsinterval = setInterval(jscounter, 25);
@@ -67,10 +79,12 @@ $(document).ready(function(){
 
 
     function htmlcounter(){
+        
         count1++;
         document.querySelector('.counter1').innerHTML = count1 + "%";
         if(count1 == 90){
             clearInterval(Htmlinterval);
+
         };
     }
     function csscounter() {
@@ -121,6 +135,11 @@ $(document).ready(function(){
         }
 
     }
+        
+    
+    
+    
+    
     // owl carousel script
     $('.carousel').owlCarousel({
         margin: 20,
