@@ -310,21 +310,22 @@ section .title::after{
     flex-direction: column;
     justify-content: center;
     right: 0;
+    top: 65%;
     z-index: 1;
-    transform: translate(195px, -200px);
+    transform: translate(150px, -200px);
     animation: moveup 1s linear 1;
     animation-fill-mode: forwards;
   }
   @keyframes moveup{
       0%{
-          transform: translate(195px, 100%);
+          transform: translate(195px, 150%);
       }
       100%{
           transform: translate(195px, 0);
       }
   }
   .social a {
-      position: relative;
+    position: relative;
     color: #fff;
     background: rgba(0, 0, 0, 0.8);
     font-size: 20px;
@@ -750,19 +751,21 @@ section .title::after{
     background: lightgrey;
     position: relative;
 }
-.skills .skills-content .right .line::before{
+.skills .skills-content .right-bars .line::before{
     content: "";
     position: absolute;
     height: 100%;
     left: 0;
     top: 0;
     background: #008F95;
+    transition: all 0.3s ease;
 }
 
 .skills-content .right .html::before{
     animation: bhtml 2s 1;
     width: 90%;
 }
+
 @keyframes bhtml {
     0%{
         width: 0%;
@@ -865,7 +868,7 @@ section .title::after{
     }
 }
 
- .skills .skills-content .right .line::after{
+ .skills .skills-content .right-bars .line::after{
     content: "";
     position: absolute;
     height: 100%;
@@ -1261,6 +1264,11 @@ footer span a:hover{
     }
 }
 @media (max-width: 947px){
+    .home .me{
+        left: 60px;
+        bottom: 500px;
+        /* margin: auto auto -280px -210px; */
+    }
     .menu-btn{
         display: block;
         z-index: 999;
@@ -1332,6 +1340,9 @@ footer span a:hover{
 }
 
 @media (max-width: 690px) {
+    .social{
+        top: 30%;
+    }
     .max-width{
         padding: 0 23px;
     }
@@ -1350,7 +1361,8 @@ footer span a:hover{
 }
 @media (max-width: 690px){
     .home .me{
-        margin: auto auto -280px -210px;
+        display: none;
+        /* margin: auto auto -280px -210px; */
     }
 }
 
