@@ -804,7 +804,7 @@ section .title::after{
         width: 100%;
     }
     100%{
-        width: 60%;
+        width: 70%;
     }
 }
 .skills-content .right .php::before{
@@ -921,7 +921,7 @@ section .title::after{
         left: 99%;
     }
     100%{
-        left: 59%;
+        left: 69%;
     }
 }
 .skills-content .right .php::after{
