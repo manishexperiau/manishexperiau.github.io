@@ -794,7 +794,7 @@ section .title::after{
 }
 .skills-content .right .js::before{
     animation: bjs 2s 1;
-    width: 60%;
+    width: 70%;
 }
 @keyframes bjs {
     0%{
@@ -911,7 +911,7 @@ section .title::after{
 }
 .skills-content .right .js::after{
     animation: bejs 2s 1;
-    left: 59%;
+    left: 69%;
 }
 @keyframes bejs {
     0%{
