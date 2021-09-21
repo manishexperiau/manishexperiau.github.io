@@ -98,7 +98,7 @@ $(document).ready(function(){
     function jscounter() {
         count3++;
         document.querySelector('.counter3').innerHTML = count3 + "%";
-        if(count3 == 60){
+        if(count3 == 70){
             clearInterval(Jsinterval);
         }
 
