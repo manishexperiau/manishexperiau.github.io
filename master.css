@@ -145,7 +145,7 @@ section .title::after{
     color: #fff;
     font-size: 20px;
     font-weight: 500;
-    margin: 0px 25px;
+    margin: 0px 20px;
     padding: 3px 0px;
     border-bottom: 2px solid transparent;
     transition: border-bottom 0.5s ease;
@@ -310,7 +310,7 @@ section .title::after{
     flex-direction: column;
     justify-content: center;
     right: 0;
-    top: 65%;
+    top: 50%;
     z-index: 1;
     transform: translate(150px, -200px);
     animation: moveup 1s linear 1;
@@ -333,8 +333,8 @@ section .title::after{
     text-decoration: none;
     display: block;
     margin: 5px;
-    padding: 20px;
-    width: 250px;
+    padding: 10px;
+    width: 240px;
     text-align: left;
     border-radius: 50px;
     transition: 1s all;
