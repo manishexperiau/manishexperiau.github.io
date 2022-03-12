@@ -122,7 +122,7 @@ section .title::after{
 .navbar .logo .logo1{
     color: #fff;
     display: flex;
-    font-size: 25px;
+    font-size: 21px;
     font-weight: 600;
     margin-left: -35px;
 }
