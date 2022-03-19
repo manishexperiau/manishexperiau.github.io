@@ -124,7 +124,7 @@ section .title::after{
     display: flex;
     font-size: 21px;
     font-weight: 600;
-    margin-left: -35px;
+    margin-left: -25px;
 }
 .navbar .logo .logo1 span{
     color: #008F95;
