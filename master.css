@@ -1105,6 +1105,8 @@ section .title::after{
     /* transform: rotate(calc(360deg / -12 * var(--rotation)));  */
     font-size: 50px;
     font-weight: bolder;
+    text-decoration: none;
+    color: rgb(201, 3, 3);
 }
 .circle2 .number-1{--rotation: 30deg}
 .circle2 .number-1 a{transform:rotate( -30deg)}
