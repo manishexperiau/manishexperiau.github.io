@@ -1059,6 +1059,123 @@ section .title::after{
     bottom: 100px;
     opacity: 1;
 }
+.circle1{
+    width: 675px;
+    height: 675px;
+    border-radius: 50%;
+    border: 0px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #dde1e7;
+    z-index: 0;
+    box-shadow: inset -10px -10px 15px #ffffff73, inset 10px 10px 15px rgba(94, 104, 121, 0.288);
+
+}
+.circle1 .circle2{
+    width: 550px;
+    height: 550px;
+    /* background-color: #111; */
+    border-radius: 50%;
+    border: 0px solid #fff;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    box-shadow: -10px -10px 15px #ffffff73, 10px 10px 15px rgba(94, 104, 121, 0.288);
+
+}
+.circle2 .number{
+    --rotation: 0 ;
+    position: absolute;
+    text-align: center;
+    left: 0;
+    transform-origin: 275px;
+    transform: rotate(var(--rotation)) translateX(-30px);
+}
+
+.circle2 .number a{
+    width: 0px;
+    height: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    /* transform: rotate(calc(360deg / -12 * var(--rotation)));  */
+    font-size: 50px;
+    font-weight: bolder;
+}
+.circle2 .number-1{--rotation: 30deg}
+.circle2 .number-1 a{transform:rotate( -30deg)}
+.circle2 .number-2{--rotation: 60deg}
+.circle2 .number-2 a{transform:rotate( -60deg)}
+.circle2 .number-3{--rotation: 90deg}
+.circle2 .number-3 a{transform:rotate( -90deg)}
+.circle2 .number-4{--rotation: 120deg}
+.circle2 .number-4 a{transform:rotate( -120deg)}
+.circle2 .number-5{--rotation: 150deg}
+.circle2 .number-5 a{transform:rotate( -150deg)}
+.circle2 .number-6{--rotation: 180deg}
+.circle2 .number-6 a{transform:rotate( -180deg)}
+.circle2 .number-7{--rotation: 210deg}
+.circle2 .number-7 a{transform:rotate( -210deg)}
+.circle2 .number-8{--rotation: 240deg}
+.circle2 .number-8 a{transform:rotate( -240deg)}
+.circle2 .number-9{--rotation: 270deg}
+.circle2 .number-9 a{transform:rotate( -270deg)}
+.circle2 .number-10{--rotation: 300deg}
+.circle2 .number-10 a{transform:rotate( -300deg)}
+.circle2 .number-11{--rotation: 330deg}
+.circle2 .number-11 a{transform:rotate( -330deg)}
+.circle2 .number-12{--rotation: 360deg}
+
+.hour-hand{
+    width: 8px;height: 200px;
+    background-color: rgb(201, 3, 3);
+    position: absolute;
+    z-index: 1;
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%) rotate(cal(var(--rotation) * 1deg));
+    transform-origin: bottom;
+    /* transform: rotate(95deg); */
+}
+.minute-hand{
+    width: 7px;height: 250px;
+    background-color: rgb(201, 3, 3);
+    position: absolute;
+    z-index: 9;
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%) rotate(cal(var(--rotation) * 1deg));
+    transform-origin: bottom;
+    /* transform: rotate(90deg); */
+
+}
+.second-hand{
+    width: 6px;height: 270px;
+    background-color: rgb(79, 76, 76);
+    position: absolute;
+    z-index: 11;
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%) rotate(cal(var(--rotation) * 1deg));
+    transform-origin: bottom;
+    /* transform: rotate(0deg); */
+
+}
+.circle{
+    position: absolute;
+    /* right: 50%;
+    top: 50%;
+    transform: translateX(-50%); */
+    z-index: 99;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: rgb(201, 3, 3);
+}
 
 /* teams section styling */
 .teams .title::after{
