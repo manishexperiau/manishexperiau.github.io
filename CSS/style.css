@@ -55,7 +55,7 @@ section{
 section .title{
     position: relative;
     text-align: center;
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 500;
     margin-bottom: 60px;
     padding-bottom: 20px;
@@ -87,7 +87,7 @@ section .title::after{
     position: fixed;
     width: 100%;
     z-index: 999;
-    padding: 20px 0;
+    padding: 0px 0;
     font-family: 'Ubuntu', sans-serif;
     transition: all 0.3s ease;
 }
@@ -122,7 +122,7 @@ section .title::after{
 .navbar .logo .logo1{
     color: #fff;
     display: flex;
-    font-size: 30px;
+    font-size: 26px;
     font-weight: 600;
     margin-left: -35px;
 }
@@ -143,9 +143,9 @@ section .title::after{
 .navbar .menu li a{
     display: block;
     color: #fff;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
-    margin: 0px 25px;
+    margin: 0px 15px;
     padding: 3px 0px;
     border-bottom: 2px solid transparent;
     transition: border-bottom 0.5s ease;
@@ -209,9 +209,10 @@ section .title::after{
     background-size: cover;
     background-attachment: fixed;
     font-family: 'Ubuntu', sans-serif;
+    overflow: hidden;
 }
 .home .max-width{
-    margin: auto 0 auto 30px;
+    margin: auto 0 auto 0px;
 
 }
 .home .home-content .text-1{
@@ -224,7 +225,7 @@ section .title::after{
 .home .home-content .text-2{
     position: relative;
     z-index: 1;
-    font-size: 75px;
+    font-size: 60px;
     font-weight: 600;
     margin-left: -3px;
 }
@@ -233,7 +234,7 @@ section .title::after{
 .home .home-content .text-3{
     position: relative;
     z-index: 1;
-    font-size: 40px;
+    font-size: 27px;
     margin: 5px 0;
 
 }
@@ -248,8 +249,8 @@ section .title::after{
     display: inline-block;
     background: #008F95;
     color: #fff;
-    font-size: 25px;
-    padding: 12px 36px;
+    font-size: 20px;
+    padding: 10px 30px;
     margin-top: 20px;
     font-weight: 400;
     border-radius: 6px;
@@ -265,8 +266,8 @@ section .title::after{
 }
 .home .me{
     position: absolute;
-    left: -120px;
-    bottom: -50px;
+    left: -130px;
+    bottom: -45px;
     z-index: 0;
     /* margin: 0px 0 -370px -690px; */
     transition: all 0.3s ease;
@@ -277,7 +278,7 @@ section .title::after{
 }
 @keyframes moverightme{
     0%{
-        transform: translateX(-250px);
+        transform: translateX(-240px);
         visibility: visible;
     }
     100%{
@@ -309,8 +310,8 @@ section .title::after{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    right: 0;
-    top: 65%;
+    right: -10px;
+    top: 58%;
     z-index: 1;
     transform: translate(150px, -200px);
     animation: moveup 1s linear 1;
@@ -328,12 +329,12 @@ section .title::after{
     position: relative;
     color: #fff;
     background: rgba(0, 0, 0, 0.8);
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
     text-decoration: none;
     display: block;
     margin: 5px;
-    padding: 20px;
+    padding: 10px 0px 10px 15px;
     width: 250px;
     text-align: left;
     border-radius: 50px;
@@ -376,7 +377,7 @@ section .title::after{
         bottom: 5%;
     } */
     100%{
-        right: 40%;
+        right: 45%;
         bottom: -30%;
     }
   }
@@ -415,10 +416,10 @@ section .title::after{
 
 @keyframes html {
     0%     {left:1080px; bottom:200px;}
-    25%     {left:700px; bottom:-100px;}
-    50%      {right:-870px; bottom:300px;}
-    75%     {right:-600px; bottom:-100px;}
-    100%    {right:-1080px; bottom:200px;}
+    25%     {left:200px; bottom:50px;}
+    50%      {left:870px; bottom:300px;}
+    75%     {right:400px; bottom:-160px;}
+    100%    {left:1080px; bottom:200px;}
 
   }
 
@@ -440,11 +441,11 @@ section .title::after{
     }
 @keyframes css {
     0%   {left:100px; top:30px;}
-    70%  {right:-1040px; top:200px;}
-    80%  {right:-550px; top:-150px;}
-    25%  {right:-800px; top:-50px;}
-    50%  {left:1090px; top:-400px;}
-    100% {right:-1070px; top:-600px;}
+    25%  {right:500px; top:-210px;}
+    50%  {left:1090px; top:0px;}
+    70%  {right:100px; top:100px;}
+    80%  {right:550px; top:0px;}
+    100% {left:100px; top: 30px;}
   }
   .js1{
     border-radius: 5px;
@@ -458,12 +459,12 @@ section .title::after{
         transform: rotate(1440deg) scale(3);
     }
 @keyframes js {
-    0%   {left:100px; top:30px;}
-    25%  {right:-900px; top:200px;}
-    50%  {right:-400px; top:-350px;}
-    70%  {right:-800px; top:-50px;}
-    80%  {left:1070px; top:-400px;}
-    100% {right:-1070px; top:-600px;}
+    0%   {left:800px; top:-300px;}
+    25%  {right:2000px; top:20px;}
+    50%  {left:120px; top:80px;}
+    70%  {right:500px; top:10px;}
+    80%  {left:1070px; top:-150px;}
+    100% {left:800px; top:-300px;}
   }
   .ill{
     position: relative;
@@ -475,12 +476,12 @@ section .title::after{
         transform: rotate(1440deg) scale(3);
     }
 @keyframes ill {
-    0%   {left:1060px; top:50px;}
-    25%  {left:400px; top:-200px;}
-    50%  {right:-400px; top:210px;}
-    70%  {right:-900px; top:-400px;}
-    80%  {right:100px; top:100px;}
-    100% {right:-1060px; top:100px;}
+    0%   {left:700px; top:-200px;}
+    25%  {left:200px; top:90px;}
+    50%  {right:100px; top:-250px;}
+    70%  {right:50px; top:200px;}
+    80%  {right:100px; top:-300px;}
+    100% {left:700px; top:-200px;}
   }
 
   .xd{
@@ -493,12 +494,12 @@ section .title::after{
         transform: rotate(1440deg) scale(3);
     }
 @keyframes xd {
-    0%   {left:1100px; top:200px;}
-    25%  {right:-400px; top:-400px;}
-    50%  {right:-800px; top:-120px;}
+    0%   {left:1000px; top:150px;}
+    25%  {right:400px; top:0px;}
+    50%  {right:800px; top:120px;}
     70%  {right:10px; top:5px;}
-    80%  {right:-800px; top:-300px;}
-    100% {right:-1000px; top:100px;}
+    80%  {right:800px; top:70px;}
+    100% {left:1000px; top:150px;}
   }
   .auto{
     position: relative;
@@ -510,12 +511,12 @@ section .title::after{
         transform: rotate(1440deg) scale(3);
     }
 @keyframes autocd {
-    0%   {left:950px; bottom:400px;}
-    25%  {left:700px; bottom:-100px;}
-    50%  {right:-500px; bottom:400px;}
-    70%  {right:-800px; bottom:-100px;}
-    80%  {right:-360px; bottom:200px;}
-    100% {right:-950px; bottom:400px;}
+    0%   {left:750px; bottom:400px;}
+    25%  {left:700px; bottom:100px;}
+    50%  {right:500px; bottom:400px;}
+    70%  {right: 300px; bottom:100px;}
+    80%  {right:600px; bottom:200px;}
+    100% {left: 750px; bottom:400px;}
   }
   .photoshop{
     position: relative;
@@ -527,12 +528,12 @@ section .title::after{
         transform: rotate(1440deg) scale(3);
     }
 @keyframes photoshop {
-    0%   {left:730px; bottom:-200px;}
-    25%  {left:950px; bottom:400px;}
-    50%  {right:-800px; bottom:-100px;}
-    70%  {right:-900px; bottom:400px;}
-    80%  {right:-1000px; bottom:400px;}
-    100% {right:-360px; bottom:200px;}
+    0%   {left:0px; bottom:0px;}
+    25%  {left:730px; top:-300px;}
+    50%  {left:800px; bottom:100px;}
+    70%  {left:300px; bottom:10px;}
+    80%  {left:1000px; bottom:-10px;}
+    100% {left:0px; bottom:0px;}
   }
 
 .premiere{
@@ -545,12 +546,12 @@ section .title::after{
         transform: rotate(1440deg) scale(3);
     }
 @keyframes premiere {
-    0%   {left:200px; bottom:-200px;}
-    25%  {left:170px; bottom:500px;}
-    50%  {right:-170px; bottom:-200px;}
-    70%  {right:-400px; bottom:400px;}
-    80%  {right:-800px; bottom:-100px;}
-    100% {right:-300px; bottom:500px;}
+    0%   {left:200px; top:-200px;}
+    25%  {left:1000px; bottom:200px;}
+    50%  {right:170px; bottom:200px;}
+    70%  {right:400px; bottom:400px;}
+    80%  {right:800px; bottom:100px;}
+    100% {left:200px; bottom:200px;}
   }
 
 
@@ -572,7 +573,7 @@ section .title::after{
     width: 55%;
 }
 .about .about-content .right .text{
-    font-size: 25px;
+    font-size: 22px;
     font-weight: 600;
     margin-bottom: 10px;
 }
@@ -586,9 +587,9 @@ section .title::after{
     display: inline-block;
     background: #008F95;
     color: #fff;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
-    padding: 10px 30px;
+    padding: 6px 20px;
     margin-top: 20px;
     border-radius: 6px;
     border: 2px solid #008F95;
@@ -601,23 +602,23 @@ section .title::after{
 }
 
 /* services section styling */
-.services, .teams{
+.services, .skills, .contact{
     color:#fff;
     background: #111;
 }
 .services .title::before,
-.teams .title::before{
-    background: #fff;
+.skills .title::before, .contact .title::before{
+    background: #fff; 
 }
 .services .title::after,
-.teams .title::after{
+.skills .title::after, .contact .title::after{
     background: #111;
     content: "what i provide";
 }
 .services .serv-content .card {
     position: relative;
-    width: calc(26% - 20px);
-    height: 380px;
+    width: calc(26% - 40px);
+    height: 340px;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -667,20 +668,28 @@ section .title::after{
 } */
 .services .serv-content .card i{
     /* position: absolute; */
-    padding: 10px 0 5px 0;
-    font-size: 40px;
+    /* padding: 2px 0 2px 0; */
+    font-size: 30px;
     color: white;
     transition: color 1s ease;
 }
-.services .serv-content .card:hover i{
+.services .serv-content .card:hover .text, .services .serv-content .card:hover i {
     color: #008F95;
 }
 .services .serv-content .card .text{
-    font-size: 25px;
+    font-size: 22px;
     font-weight: 500;
-    padding: 6px 0 5px 0;
+    transition: color 1s ease;
+    padding: 0px 0 20px 0;
+}
+.services .serv-content .card p{
+    font-size: 14px;
+    text-align: justify;
 }
 .services .serv-content .card a{
+    position: absolute;
+    top: 80%;
+    
     margin-top: 10px;
     padding: 5px 10px;
     color: #008F95;
@@ -1057,140 +1066,31 @@ section .title::after{
     opacity: 1;
 }
 
-.circle1{
-    width: 675px;
-    height: 675px;
-    border-radius: 50%;
-    border: 0px solid #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #dde1e7;
-    z-index: 0;
-    box-shadow: inset -10px -10px 15px #ffffff73, inset 10px 10px 15px rgba(94, 104, 121, 0.288);
-
-}
-.circle1 .circle2{
-    width: 550px;
-    height: 550px;
-    /* background-color: #111; */
-    border-radius: 50%;
-    border: 0px solid #fff;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1;
-    box-shadow: -10px -10px 15px #ffffff73, 10px 10px 15px rgba(94, 104, 121, 0.288);
-
-}
-.circle2 .number{
-    --rotation: 0 ;
-    position: absolute;
-    text-align: center;
-    left: 0;
-    transform-origin: 275px;
-    transform: rotate(var(--rotation)) translateX(-30px);
-}
-
-.circle2 .number a{
-    width: 0px;
-    height: 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    /* transform: rotate(calc(360deg / -12 * var(--rotation)));  */
-    font-size: 50px;
-    font-weight: bolder;
-    text-decoration: none;
-    color: rgb(201, 3, 3);
-}
-.circle2 .number-1{--rotation: 30deg}
-.circle2 .number-1 a{transform:rotate( -30deg)}
-.circle2 .number-2{--rotation: 60deg}
-.circle2 .number-2 a{transform:rotate( -60deg)}
-.circle2 .number-3{--rotation: 90deg}
-.circle2 .number-3 a{transform:rotate( -90deg)}
-.circle2 .number-4{--rotation: 120deg}
-.circle2 .number-4 a{transform:rotate( -120deg)}
-.circle2 .number-5{--rotation: 150deg}
-.circle2 .number-5 a{transform:rotate( -150deg)}
-.circle2 .number-6{--rotation: 180deg}
-.circle2 .number-6 a{transform:rotate( -180deg)}
-.circle2 .number-7{--rotation: 210deg}
-.circle2 .number-7 a{transform:rotate( -210deg)}
-.circle2 .number-8{--rotation: 240deg}
-.circle2 .number-8 a{transform:rotate( -240deg)}
-.circle2 .number-9{--rotation: 270deg}
-.circle2 .number-9 a{transform:rotate( -270deg)}
-.circle2 .number-10{--rotation: 300deg}
-.circle2 .number-10 a{transform:rotate( -300deg)}
-.circle2 .number-11{--rotation: 330deg}
-.circle2 .number-11 a{transform:rotate( -330deg)}
-.circle2 .number-12{--rotation: 360deg}
-
-.hour-hand{
-    width: 8px;height: 200px;
-    background-color: rgb(201, 3, 3);
-    position: absolute;
-    z-index: 1;
-    bottom: 50%;
-    left: 50%;
-    transform: translateX(-50%) rotate(cal(var(--rotation) * 1deg));
-    transform-origin: bottom;
-    /* transform: rotate(95deg); */
-}
-.minute-hand{
-    width: 7px;height: 250px;
-    background-color: rgb(201, 3, 3);
-    position: absolute;
-    z-index: 9;
-    bottom: 50%;
-    left: 50%;
-    transform: translateX(-50%) rotate(cal(var(--rotation) * 1deg));
-    transform-origin: bottom;
-    /* transform: rotate(90deg); */
-
-}
-.second-hand{
-    width: 6px;height: 270px;
-    background-color: rgb(79, 76, 76);
-    position: absolute;
-    z-index: 11;
-    bottom: 50%;
-    left: 50%;
-    transform: translateX(-50%) rotate(cal(var(--rotation) * 1deg));
-    transform-origin: bottom;
-    /* transform: rotate(0deg); */
-
-}
-.circle{
-    position: absolute;
-    /* right: 50%;
-    top: 50%;
-    transform: translateX(-50%); */
-    z-index: 99;
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background-color: rgb(201, 3, 3);
-}
-
 /* teams section styling */
 .teams .title::after{
     content: "who with me";
 }
+/* .teams .carousel{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} */
 .teams .carousel .card{
-    background: #222;
+    width: auto;
+    background: #fff;
     border-radius: 6px;
-    padding: 25px 35px;
+    border:  2px solid #008F95;
+    padding: 15px 20px;
     text-align: center;
     overflow: hidden;
     transition: all 2s ease;
 }
 .teams .carousel .card:hover{
     background: #008F95;
+}
+.teams .carousel .card:hover .text, .teams .carousel .card:hover .box p{
+    color: #fff;
 }
 .teams .carousel .card .box{
     display: flex;
@@ -1203,13 +1103,13 @@ section .title::after{
     transform: scale(1.05);
 }
 .teams .carousel .card .text{
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
 .teams .carousel .card img{
-    height: 150px;
-    width: 150px;
+    height: 120px;
+    width: 120px;
     object-fit: cover;
     border-radius: 50%;
     border: 5px solid #008F95;
@@ -1217,6 +1117,9 @@ section .title::after{
 }
 .teams .carousel .card:hover img{
     border-color: #fff;
+}
+.teams .carousel .card .box p{
+    font-size: 14px;
 }
 .owl-dots{
     text-align: center;
@@ -1267,14 +1170,14 @@ section .title::after{
     margin-left: 30px;
 }
 .contact .contact-content .row i{
-    font-size: 25px;
+    font-size: 22px;
     color: #008F95;
 }
 .contact .contact-content .info .head{
     font-weight: 500;
 }
 .contact .contact-content .info .sub-title{
-    color: #333;
+    color: rgb(99, 98, 98);
 }
 .contact .right form .fields{
     display: flex;
@@ -1318,14 +1221,14 @@ section .title::after{
 }
 .contact .right form .button{
     height: 47px;
-    width: 170px;
+    width: 100%;
 }
 .contact .right form .button button{
     width: 100%;
     height: 100%;
-    border: 2px solid #008F95;
-    background: #008F95;
-    color: #fff;
+    /* border: 2px solid #008F95; */
+    background: #fff;
+    color: #008F95;
     outline: none;
     font-size: 20px;
     font-weight: 500;
@@ -1334,16 +1237,17 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .contact .right form .button button:hover{
-    color: #008F95;
-    background: none;
+    background-color: #008F95;
+    color: #fff;
+    /* background: none; */
 }
 
 /* footer section styling */
 footer{
-    background: #111;
+    /* background: #111; */
 
     padding: 40px 23px;
-    color: #fff;
+    color: #111;
     text-align: center;
 }
 footer span a{
