@@ -1282,10 +1282,10 @@ footer span a:hover{
     .home .max-width{
         margin-left: 0px;
     }
-    .html1, .css1, .js1, .ill, .photoshop, .premiere, .auto, .xd{
+/*     .html1, .css1, .js1, .ill, .photoshop, .premiere, .auto, .xd{
          
             display: none;
-    }
+    } */
 }
 @media (max-width: 1300px){
     .home .me{
